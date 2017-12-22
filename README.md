@@ -12,5 +12,6 @@
 4.  Forth, after successfully installing the *osdf-reactive* app, you should activate it using the following command from onos cli.
     - *onos 127.0.0.1* 
     - *app activate org.osdfreactive*
-    
-5. 
+   
+5. To test the osdf-reactive application, we provide you a set of examples as follows: 
+   - [Intra site routing inside a leaf-spine network topology]()
