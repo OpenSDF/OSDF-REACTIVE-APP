@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.osdfreactive.policies.DefaultPolicyId" activate="activate" deactivate="deactivate">
-    <implementation class="org.osdfreactive.policies.DefaultPolicyId"/>
-    <service servicefactory="false">
-        <provide interface="org.osdfreactive.policies.PolicyIdInterface"/>
-    </service>
-    <property name="service.pid" value="org.osdfreactive.policies.DefaultPolicyId"/>
-    <reference name="policyService" interface="org.osdfreactive.policystorage.PolicyService" cardinality="1..1" policy="static" bind="bindPolicyService" unbind="unbindPolicyService"/>
-</scr:component>

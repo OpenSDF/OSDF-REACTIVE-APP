@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.osdfreactive.AppComponent" activate="activate" deactivate="deactivate">
-    <implementation class="org.osdfreactive.AppComponent"/>
-    <property name="service.pid" value="org.osdfreactive.AppComponent"/>
-</scr:component>
