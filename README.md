@@ -10,4 +10,5 @@
 3.  Third, after successfully compiling the application, you should install it using the **onos-app** script.
     - *onos-app localhost install target/osdf-reactive-1.0-SNAPSHOT.oar* 
 4.  Forth, after successfully installing the *osdf-reactive* app, you should activate it using the following command from onos cli.
+    - *onos 127.0.0.1* 
     - *app activate org.osdfreactive*
