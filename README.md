@@ -7,4 +7,4 @@
     - git clone https://github.com/OpenSDF/OSDF-REACTIVE-APP.git
     - cd osdf-reactive
     - mvn clean install 
-3.  Third, 
+3.  Third, after successfully compiling the application, you should install it using the **onos-app** script.
