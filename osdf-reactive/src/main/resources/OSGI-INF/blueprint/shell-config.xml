@@ -17,9 +17,6 @@
 
     <command-bundle xmlns="http://karaf.apache.org/xmlns/shell/v1.1.0">
         <command>
-            <action class="org.osdfreactive.AppCommand"/>
-        </command>
-        <command>
             <action class="org.osdfreactive.IntraRouteCommand"/>
         </command>
         <command>
