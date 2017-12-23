@@ -14,6 +14,8 @@
     - *onos 127.0.0.1* 
     - *app activate org.osdfreactive*
     
+5- Now, OSDF is ready!
+    
 ### Examples
 After installing ONOS and OSDF app successfully, you will be able to configure a network using high level abstractions that OSDF application provides. To test OSDF application, we provide a set of examples as follows: 
    - [Intra site routing (Example #1)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-1%29)
