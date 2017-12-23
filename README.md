@@ -15,3 +15,22 @@
     
 5- After completing the above steps, you will be able to configure the network using high level abstractions that osdf-reactive application provides. To test the osdf-reactive application, we provide you a set of examples as follows: 
    - [Intra site routing (Example #1)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-1%29)
+
+
+#### Note: If you plan to use this application for your research, please cite this publication:
+
+
+@article{DBLP:journals/corr/abs-1710-00958,
+  author    = {Douglas Comer and
+               Adib Rastegarnia},
+  title     = {{OSDF:} {A} Framework For Software Defined Network Programming},
+  journal   = {CoRR},
+  volume    = {abs/1710.00958},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1710.00958},
+  archivePrefix = {arXiv},
+  eprint    = {1710.00958},
+  timestamp = {Wed, 01 Nov 2017 19:05:43 +0100},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1710-00958},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
