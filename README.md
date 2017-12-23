@@ -19,20 +19,3 @@
 
 #### Note: If you plan to use this application for your research, please cite this publication:
 
-`
-@article{DBLP:journals/corr/abs-1710-00958,
-  author    = {Douglas Comer and
-               Adib Rastegarnia},
-  title     = {{OSDF:} {A} Framework For Software Defined Network Programming},
-  journal   = {CoRR},
-  volume    = {abs/1710.00958},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1710.00958},
-  archivePrefix = {arXiv},
-  eprint    = {1710.00958},
-  timestamp = {Wed, 01 Nov 2017 19:05:43 +0100},
-  biburl    = {http://dblp.org/rec/bib/journals/corr/abs-1710-00958},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-`
-
