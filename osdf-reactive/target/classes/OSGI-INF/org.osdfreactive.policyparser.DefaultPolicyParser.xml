@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.osdfreactive.policyparser.DefaultPolicyParser" activate="activate" deactivate="deactivate" modified="modified">
+    <implementation class="org.osdfreactive.policyparser.DefaultPolicyParser"/>
+    <service servicefactory="false">
+        <provide interface="org.osdfreactive.policyparser.PolicyParserInterface"/>
+    </service>
+    <property name="packetOutOnly" type="Boolean" value="false"/>
+    <property name="packetOutOfppTable" type="Boolean" value="false"/>
+    <property name="flowTimeout" type="Integer" value="10"/>
+    <property name="flowPriority" type="Integer" value="10"/>
+    <property name="ipv6Forwarding" type="Boolean" value="false"/>
+    <property name="matchDstMacOnly" type="Boolean" value="false"/>
+    <property name="matchVlanId" type="Boolean" value="false"/>
+    <property name="matchIpv4Address" type="Boolean" value="true"/>
+    <property name="matchIpv4Dscp" type="Boolean" value="false"/>
+    <property name="matchIpv6Address" type="Boolean" value="false"/>
+    <property name="matchIpv6FlowLabel" type="Boolean" value="false"/>
+    <property name="matchTcpUdpPorts" type="Boolean" value="true"/>
+    <property name="matchIcmpFields" type="Boolean" value="true"/>
+    <property name="ignoreIPv4Multicast" type="Boolean" value="false"/>
+    <property name="recordMetrics" type="Boolean" value="false"/>
+    <property name="service.pid" value="org.osdfreactive.policyparser.DefaultPolicyParser"/>
+    <reference name="httpPolicyPaser" interface="org.osdfreactive.policyparser.HttpPolicyPaserInterface" cardinality="1..1" policy="static" bind="bindHttpPolicyPaser" unbind="unbindHttpPolicyPaser"/>
+    <reference name="icmpPolicyParser" interface="org.osdfreactive.policyparser.IcmpPolicyParserInterface" cardinality="1..1" policy="static" bind="bindIcmpPolicyParser" unbind="unbindIcmpPolicyParser"/>
+    <reference name="vStreamingPolicyParser" interface="org.osdfreactive.policyparser.VstreamingPolicyParserInterface" cardinality="1..1" policy="static" bind="bindVStreamingPolicyParser" unbind="unbindVStreamingPolicyParser"/>
+</scr:component>

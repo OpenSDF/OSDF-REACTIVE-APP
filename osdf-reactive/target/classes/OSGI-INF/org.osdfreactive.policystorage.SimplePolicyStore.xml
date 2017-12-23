@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.osdfreactive.policystorage.SimplePolicyStore" activate="activate" deactivate="deactivate">
+    <implementation class="org.osdfreactive.policystorage.SimplePolicyStore"/>
+    <service servicefactory="false">
+        <provide interface="org.osdfreactive.policystorage.PolicyStore"/>
+        <provide interface="org.onosproject.store.Store"/>
+    </service>
+    <property name="service.pid" value="org.osdfreactive.policystorage.SimplePolicyStore"/>
+    <reference name="flowRuleService" interface="org.onosproject.net.flow.FlowRuleService" cardinality="1..1" policy="static" bind="bindFlowRuleService" unbind="unbindFlowRuleService"/>
+    <reference name="storageService" interface="org.onosproject.store.service.StorageService" cardinality="1..1" policy="static" bind="bindStorageService" unbind="unbindStorageService"/>
+</scr:component>
