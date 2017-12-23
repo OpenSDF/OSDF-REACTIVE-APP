@@ -17,5 +17,5 @@
    - [Intra site routing (Example #1)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-1%29)
 
 
-#### Note: If you plan to use this application for your research, please cite this publication:
+#### Note: If you plan to use this application for your research, please cite our work: https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Conference-papers
 
