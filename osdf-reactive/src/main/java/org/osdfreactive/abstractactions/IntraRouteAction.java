@@ -246,7 +246,7 @@ public class IntraRouteAction extends AbstractAction implements IntraRouteAction
 
                             //context.treatmentBuilder().setOutput(dst.location().port());
                             //context.send();
-                            forwardPacketToDst(context,dst.location());
+                            //forwardPacketToDst(context,dst.location());
                         } else {
                             Set<Path> endToEndPaths =
                                     topologyService.getPaths(topologyService.currentTopology(),
@@ -322,7 +322,7 @@ public class IntraRouteAction extends AbstractAction implements IntraRouteAction
                                 log.info(e.getLocalizedMessage());
                             }*/
 
-                            forwardPacketToDst(context,firstLink.src());
+                            //forwardPacketToDst(context,firstLink.src());
                             //context.treatmentBuilder().setOutput(firstLink.src().port());
                             //context.send();
 

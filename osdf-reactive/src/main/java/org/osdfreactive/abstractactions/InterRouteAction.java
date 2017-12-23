@@ -254,7 +254,7 @@ public class InterRouteAction
                             } catch (InterruptedException e) {
                                 log.info(e.getLocalizedMessage());
                             }*/
-                            forwardPacketToDst(context,dst.location());
+                            //forwardPacketToDst(context,dst.location());
                             //context.treatmentBuilder().setOutput(dst.location().port());
                             //context.send();
 
@@ -361,7 +361,7 @@ public class InterRouteAction
                                 log.info(e.getLocalizedMessage());
                             }*/
 
-                            forwardPacketToDst(context,firstLink.src());
+                            //forwardPacketToDst(context,firstLink.src());
                             //context.treatmentBuilder().setOutput(firstLink.src().port());
                             //context.send();
 
