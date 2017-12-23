@@ -14,7 +14,7 @@
     - *onos 127.0.0.1* 
     - *app activate org.osdfreactive*
     
-5- Now, OSDF is ready!
+5- Now, *OSDF* is ready!
     
 ### Examples
 After installing ONOS and OSDF app successfully, you will be able to configure a network using high level abstractions that OSDF application provides. To test OSDF application, we provide a set of examples as follows: 
