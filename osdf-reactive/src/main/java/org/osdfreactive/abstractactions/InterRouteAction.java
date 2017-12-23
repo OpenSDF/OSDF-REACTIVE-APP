@@ -85,12 +85,7 @@ public class InterRouteAction
     /**
      * Link service instance.
      */
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected LinkService linkService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected NetworkConfigService networkConfigService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected RegionService regionService;
+
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected PolicyService policyService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)

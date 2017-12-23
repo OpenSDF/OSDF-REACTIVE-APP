@@ -70,7 +70,9 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 @Component(immediate = true)
 @Service
-public class IntraRouteAction extends AbstractAction implements IntraRouteActionInterface {
+public class IntraRouteAction extends
+        AbstractAction
+        implements IntraRouteActionInterface {
 
 
     private static final int DEFAULT_TIMEOUT = 100;
