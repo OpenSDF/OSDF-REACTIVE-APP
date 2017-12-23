@@ -25,14 +25,14 @@ import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
-import org.osdfreactive.policies.DefaultPolicyId;
-import org.osdfreactive.policies.Policy;
 import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.net.flow.FlowRule;
 import org.onosproject.net.flow.FlowRuleService;
 import org.onosproject.store.AbstractStore;
 import org.onosproject.store.service.ConsistentMap;
 import org.onosproject.store.service.StorageService;
+import org.osdfreactive.policies.DefaultPolicyId;
+import org.osdfreactive.policies.Policy;
 import org.slf4j.Logger;
 
 import java.util.Collection;

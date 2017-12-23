@@ -17,9 +17,9 @@
 package org.osdfreactive.policyparser;
 
 import org.onlab.packet.Ethernet;
-import org.osdfreactive.policies.DefaultPolicy;
 import org.onosproject.net.flow.TrafficSelector;
 import org.onosproject.net.packet.InboundPacket;
+import org.osdfreactive.policies.DefaultPolicy;
 
 /**
  * Video Streaming Policy Parser Interface.

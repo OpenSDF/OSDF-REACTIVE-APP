@@ -28,11 +28,11 @@ import org.onlab.packet.IPv4;
 import org.onlab.packet.Ip4Prefix;
 import org.onlab.packet.MacAddress;
 import org.onlab.util.Tools;
-import org.osdfreactive.policies.DefaultPolicy;
 import org.onosproject.net.Link;
 import org.onosproject.net.flow.DefaultTrafficSelector;
 import org.onosproject.net.flow.TrafficSelector;
 import org.onosproject.net.packet.InboundPacket;
+import org.osdfreactive.policies.DefaultPolicy;
 import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 

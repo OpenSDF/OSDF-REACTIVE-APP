@@ -18,9 +18,9 @@ package org.osdfreactive.policystorage;
 
 import com.google.common.collect.Multimap;
 import org.onosproject.event.ListenerService;
+import org.onosproject.net.flow.DefaultFlowRule;
 import org.osdfreactive.policies.DefaultPolicyId;
 import org.osdfreactive.policies.Policy;
-import org.onosproject.net.flow.DefaultFlowRule;
 
 import java.util.Collection;
 import java.util.Map;

@@ -16,13 +16,9 @@
 
 package org.osdfreactive.policyparser;
 
-import org.osdfreactive.policies.DefaultPolicy;
-import org.onosproject.net.DefaultPath;
 import org.onosproject.net.Path;
-import org.onosproject.net.PortNumber;
-import org.onosproject.net.packet.InboundPacket;
+import org.osdfreactive.policies.DefaultPolicy;
 
-import java.util.List;
 import java.util.Set;
 
 /**

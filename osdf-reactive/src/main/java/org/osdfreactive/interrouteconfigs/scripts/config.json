@@ -31,13 +31,11 @@
             "regionId": "siteD",
             "prefixlen": "24"
           }
-
         ],
         "ip6LocalPrefixes": [
         ],
         "virtualGatewayMacAddress": "00:00:00:00:00:01"
       }
     }
-    
   }
 }

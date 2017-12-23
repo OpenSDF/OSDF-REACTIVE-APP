@@ -21,14 +21,14 @@ import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Service;
+import org.onosproject.net.ConnectPoint;
+import org.onosproject.net.HostId;
+import org.onosproject.net.region.Region;
 import org.osdfreactive.abstractactions.ActionList;
 import org.osdfreactive.policyparser.PathSelectionAlgos;
 import org.osdfreactive.policystorage.PolicyState;
 import org.osdfreactive.trafficprofiles.DefaultTrafficProfile;
 import org.osdfreactive.trafficprofiles.TrafficProfile;
-import org.onosproject.net.ConnectPoint;
-import org.onosproject.net.HostId;
-import org.onosproject.net.region.Region;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -96,7 +96,6 @@ public class DefaultCreatePolicy
         DefaultPolicyId defaultPolicyId;
         defaultPolicyId = new DefaultPolicyId();
         defaultPolicyId.createPolicyId(policyName);
-
 
 
         policy = DefaultPolicy

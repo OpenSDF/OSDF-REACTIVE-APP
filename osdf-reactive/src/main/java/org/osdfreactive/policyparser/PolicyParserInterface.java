@@ -18,10 +18,10 @@ package org.osdfreactive.policyparser;
 
 import org.onlab.packet.Ethernet;
 import org.onlab.packet.MacAddress;
-import org.osdfreactive.policies.DefaultPolicy;
 import org.onosproject.net.Link;
 import org.onosproject.net.flow.TrafficSelector;
 import org.onosproject.net.packet.InboundPacket;
+import org.osdfreactive.policies.DefaultPolicy;
 
 /**
  * Policy Parser interface.

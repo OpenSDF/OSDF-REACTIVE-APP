@@ -18,10 +18,10 @@ package org.osdfreactive.policystorage;
 
 
 import com.google.common.collect.Multimap;
-import org.osdfreactive.policies.DefaultPolicyId;
-import org.osdfreactive.policies.Policy;
 import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.store.Store;
+import org.osdfreactive.policies.DefaultPolicyId;
+import org.osdfreactive.policies.Policy;
 
 import java.util.Collection;
 import java.util.Map;

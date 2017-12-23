@@ -16,13 +16,13 @@
 
 package org.osdfreactive.policies;
 
+import org.onosproject.net.ConnectPoint;
+import org.onosproject.net.HostId;
+import org.onosproject.net.region.Region;
 import org.osdfreactive.abstractactions.ActionList;
 import org.osdfreactive.policyparser.PathSelectionAlgos;
 import org.osdfreactive.policystorage.PolicyState;
 import org.osdfreactive.trafficprofiles.TrafficProfile;
-import org.onosproject.net.ConnectPoint;
-import org.onosproject.net.HostId;
-import org.onosproject.net.region.Region;
 
 import java.util.List;
 

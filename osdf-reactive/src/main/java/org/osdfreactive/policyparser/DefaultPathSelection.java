@@ -22,23 +22,11 @@ import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
-import org.onlab.packet.Ethernet;
-import org.onlab.packet.IPv4;
-import org.onlab.packet.IpAddress;
-import org.onlab.packet.TCP;
-import org.onlab.packet.UDP;
-import org.osdfreactive.policies.DefaultPolicy;
 import org.onosproject.net.ConnectPoint;
-import org.onosproject.net.DefaultPath;
-import org.onosproject.net.DeviceId;
 import org.onosproject.net.Link;
 import org.onosproject.net.Path;
-import org.onosproject.net.PortNumber;
-import org.onosproject.net.packet.InboundPacket;
-import org.onosproject.net.topology.Topology;
-import org.onosproject.net.topology.TopologyGraph;
 import org.onosproject.net.topology.TopologyService;
-import org.onosproject.net.topology.TopologyVertex;
+import org.osdfreactive.policies.DefaultPolicy;
 import org.slf4j.Logger;
 
 import java.util.HashSet;
@@ -137,8 +125,6 @@ public class DefaultPathSelection
 
 
     }
-
-
 
 
     /**

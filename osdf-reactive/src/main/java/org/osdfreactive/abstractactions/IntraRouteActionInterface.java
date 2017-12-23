@@ -16,8 +16,8 @@
 
 package org.osdfreactive.abstractactions;
 
-import org.osdfreactive.policies.DefaultPolicy;
 import org.onosproject.net.packet.PacketContext;
+import org.osdfreactive.policies.DefaultPolicy;
 
 /**
  * An interface for intra-site-routing abstract action.

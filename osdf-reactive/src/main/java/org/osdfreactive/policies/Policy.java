@@ -16,7 +16,6 @@
 
 package org.osdfreactive.policies;
 
-import org.osdfreactive.policies.DefaultPolicyId;
 import org.osdfreactive.policystorage.PolicyState;
 
 /**

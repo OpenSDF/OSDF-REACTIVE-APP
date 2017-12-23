@@ -20,13 +20,10 @@ import org.apache.karaf.shell.commands.Argument;
 import org.apache.karaf.shell.commands.Command;
 import org.onosproject.cli.AbstractShellCommand;
 import org.osdfreactive.policies.DefaultPolicy;
-import org.osdfreactive.policies.Policy;
 import org.osdfreactive.policystorage.PolicyEvent;
 import org.osdfreactive.policystorage.PolicyListener;
 import org.osdfreactive.policystorage.PolicyService;
 import org.slf4j.Logger;
-
-import java.util.Iterator;
 
 import static org.slf4j.LoggerFactory.getLogger;
 
@@ -40,11 +37,10 @@ public class RemovePolicyCommand extends AbstractShellCommand {
     //@Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     //protected PolicyService policyService;
 
+    private final Logger log = getLogger(getClass());
     @Argument(index = 0, name = "policyID", description = "PolicyID",
             required = true, multiValued = false)
     private String policyID = null;
-
-    private final Logger log = getLogger(getClass());
 
     @Override
     protected void execute() {
@@ -56,8 +52,6 @@ public class RemovePolicyCommand extends AbstractShellCommand {
         policyService.addListener(policyListener);
         DefaultPolicy policy = (DefaultPolicy) policyService.getPolicy(policyID);
         policyService.removeCurrentPolicy(policy);
-
-
 
 
     }

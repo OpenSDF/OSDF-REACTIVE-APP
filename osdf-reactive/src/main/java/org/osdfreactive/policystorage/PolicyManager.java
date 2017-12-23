@@ -24,9 +24,9 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
 import org.onosproject.event.AbstractListenerManager;
+import org.onosproject.net.flow.DefaultFlowRule;
 import org.osdfreactive.policies.DefaultPolicyId;
 import org.osdfreactive.policies.Policy;
-import org.onosproject.net.flow.DefaultFlowRule;
 import org.slf4j.Logger;
 
 import java.util.Collection;
