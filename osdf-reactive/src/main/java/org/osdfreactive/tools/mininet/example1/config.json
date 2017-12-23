@@ -1,0 +1,17 @@
+{
+  "apps": {
+    "org.onosproject.InterRouting": {
+      "InterRouting": {
+        "ip4LocalPrefixes": [
+          {
+            "ipPrefix": "10.0.0.0/24",
+            "type": "PRIVATE",
+            "gatewayIp": "10.0.0.254",
+            "regionId": "siteA",
+            "prefixlen": "24"
+          }
+        ]
+      }
+    }
+  }
+}
