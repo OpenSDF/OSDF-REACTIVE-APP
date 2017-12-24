@@ -28,7 +28,7 @@ import org.slf4j.Logger;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
- * Remove policy command.
+ * Removes a policy from the list of current active polices.
  */
 @Command(scope = "onos", name = "remove-policy",
         description = "Remove a policy from the list of current active policies")

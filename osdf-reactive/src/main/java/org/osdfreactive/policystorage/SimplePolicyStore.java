@@ -139,12 +139,11 @@ public class SimplePolicyStore
         current.put((DefaultPolicyId) policy.getPolicyId(), policy);
 
         PolicyEvent.getEvent(policy).ifPresent(this::notifyDelegate);
-        //pending.remove(policy);
 
     }
 
     /**
-     * add a flow rule to the list of flow rules for a given policy.
+     * Add a flow rule to the list of flow rules for a given policy.
      *
      * @param policy   policy
      * @param flowRule flow rule
@@ -157,7 +156,7 @@ public class SimplePolicyStore
 
 
     /**
-     * remove a policy from list of current active polices.
+     * Remove a policy from list of current active polices.
      *
      * @param policy a policy
      */
@@ -184,10 +183,7 @@ public class SimplePolicyStore
     public Policy getPolicy(String policyId) {
 
         for (Policy policy : current.values()) {
-
-            //log.info("Policy ID" + String.valueOf(policy.getPolicyId().getPolicyId()));
             if (policy.getPolicyId().getPolicyId() == Integer.parseInt(policyId)) {
-                //log.info("Policy Found");
                 return policy;
             }
         }
@@ -211,8 +207,7 @@ public class SimplePolicyStore
     }
 
     /**
-     * Returns the flow rules list.
-     *
+     * Return the flow rules list.
      * @return flow rule list
      */
     @Override

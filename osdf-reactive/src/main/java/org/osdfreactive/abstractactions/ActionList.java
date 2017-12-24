@@ -17,7 +17,7 @@
 package org.osdfreactive.abstractactions;
 
 /**
- * High level operations list.
+ * High level network operations list.
  */
 public enum ActionList {
     /**

@@ -17,7 +17,7 @@
 package org.osdfreactive.abstractactions;
 
 /**
- * An interface for routing abstract action.
+ * An interface for intra and inter domain routing abstract operations.
  */
 public interface RouteActionInterface {
 

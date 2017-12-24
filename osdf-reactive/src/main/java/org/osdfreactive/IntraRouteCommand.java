@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Intra-Route data traffic based on a given network policy and inside a region.
+ * Route data traffic based on a given network policy and inside a region.
  */
 @Command(scope = "onos", name = "Intra-route",
         description = "route packets based on high level network information inside a region")

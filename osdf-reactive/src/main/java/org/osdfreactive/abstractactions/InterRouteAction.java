@@ -64,7 +64,7 @@ import java.util.Set;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
- * Inter-route network traffic between regions
+ * Route a network traffic between regions
  * based on high level polices.
  */
 @Component(immediate = true)
