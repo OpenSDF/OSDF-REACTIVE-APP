@@ -20,7 +20,7 @@ import org.onosproject.net.packet.PacketContext;
 import org.osdfreactive.policies.DefaultPolicy;
 
 /**
- * An interface for inter-domain-routing abstract action.
+ * An interface for inter-domain-routing abstract operation.
  */
 public interface InterRouteActionInterface {
 

@@ -235,13 +235,6 @@ public class IntraRouteAction extends
                 policyService.addFlowRule(policy, flowRule);
 
             }
-                            /*try {
-                                Thread.sleep(5 * policyService.getRulesCount(policy));
-
-                            } catch (InterruptedException e) {
-                                log.info(e.getLocalizedMessage());
-                            }*/
-
 
             //context.treatmentBuilder().setOutput(dst.location().port());
             //context.send();
@@ -314,12 +307,7 @@ public class IntraRouteAction extends
                 }
             }
 
-                            /*try {
-                                Thread.sleep(5 * policyService.getRulesCount(policy));
 
-                            } catch (InterruptedException e) {
-                                log.info(e.getLocalizedMessage());
-                            }*/
 
             //forwardPacketToDst(context,firstLink.src());
             //context.treatmentBuilder().setOutput(firstLink.src().port());

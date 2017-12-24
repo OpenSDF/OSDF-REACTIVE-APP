@@ -80,10 +80,6 @@ public class InterRouteAction
     private static final int TABLE_ID = 0;
     private final Logger log = getLogger(getClass());
 
-    /**
-     * Link service instance.
-     */
-
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected PolicyService policyService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
@@ -98,9 +94,6 @@ public class InterRouteAction
     protected FlowRuleService flowRuleService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected InterRouteConfigurationService config;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected NetworkConfigService configService;
-
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     private PolicyParserInterface policyParser;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
@@ -240,12 +233,6 @@ public class InterRouteAction
                 policyService.addFlowRule(policy, flowRule);
             }
 
-                            /*try {
-                                Thread.sleep(10 * policyService.getRulesCount(policy));
-
-                            } catch (InterruptedException e) {
-                                log.info(e.getLocalizedMessage());
-                            }*/
             //forwardPacketToDst(context,dst.location());
             //context.treatmentBuilder().setOutput(dst.location().port());
             //context.send();
@@ -346,13 +333,6 @@ public class InterRouteAction
                     }
                 }
             }
-                            /*try {
-                                Thread.sleep(10 * policyService.getRulesCount(policy));
-
-                            } catch (InterruptedException e) {
-                                log.info(e.getLocalizedMessage());
-                            }*/
-
             //forwardPacketToDst(context,firstLink.src());
             //context.treatmentBuilder().setOutput(firstLink.src().port());
             //context.send();
