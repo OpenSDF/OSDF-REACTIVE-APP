@@ -14,12 +14,22 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.networkoperations;
 
 /**
- * High level abstract actions for configuring and monitoring a network.
+ * High level network operations list.
  */
-public abstract class AbstractAction {
+public enum OperationsList {
+    /**
+     * Routing a traffic inside a region (intra-site-routing).
+     */
+
+    INTRA_ROUTE,
+
+    /**
+     * Routing a traffic between regions (inter-site-routing).
+     */
+    INTER_ROUTE,
 
 
 }

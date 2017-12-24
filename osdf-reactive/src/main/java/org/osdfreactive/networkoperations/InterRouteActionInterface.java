@@ -14,19 +14,21 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.applicationinfo;
+package org.osdfreactive.networkoperations;
+
+import org.onosproject.net.packet.PacketContext;
+import org.osdfreactive.policies.DefaultPolicy;
 
 /**
- * Different types of traffic classes.
+ * An interface for inter-domain-routing abstract operation.
  */
-public enum TrafficClasses {
+public interface InterRouteActionInterface {
+
     /**
-     * Real time traffic class.
+     * Process an incoming packet based on a given policy.
+     * @param policy a policy
+     * @param context packet context
      */
-    REAL_TIME,
-    /**
-     * Best effort delivery traffic class.
-     */
-    BEST_EFFORT
+    void interRouteProcess(DefaultPolicy policy, PacketContext context);
 
 }

@@ -36,10 +36,10 @@ import org.onosproject.net.Link;
 import org.onosproject.net.flow.DefaultTrafficSelector;
 import org.onosproject.net.flow.TrafficSelector;
 import org.onosproject.net.packet.InboundPacket;
-import org.osdfreactive.applicationinfo.ApplicationTypes;
+import org.osdfreactive.appsinfo.ApplicationTypes;
 import org.osdfreactive.policies.DefaultPolicy;
 import org.osdfreactive.trafficprofiles.DefaultTrafficProfile;
-import org.osdfreactive.transportprotocolinfo.TransportProtocols;
+import org.osdfreactive.transprotocolsinfo.TransportProtocols;
 import org.osgi.service.component.ComponentContext;
 import org.slf4j.Logger;
 

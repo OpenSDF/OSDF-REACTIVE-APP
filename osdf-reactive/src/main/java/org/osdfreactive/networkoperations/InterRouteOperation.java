@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.networkoperations;
 
 import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
@@ -34,7 +34,6 @@ import org.onosproject.net.Host;
 import org.onosproject.net.HostId;
 import org.onosproject.net.Link;
 import org.onosproject.net.Path;
-import org.onosproject.net.config.NetworkConfigService;
 import org.onosproject.net.device.DeviceService;
 import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.net.flow.DefaultTrafficSelector;
@@ -50,7 +49,7 @@ import org.onosproject.net.packet.PacketContext;
 import org.onosproject.net.packet.PacketPriority;
 import org.onosproject.net.packet.PacketService;
 import org.onosproject.net.topology.TopologyService;
-import org.osdfreactive.interrouteconfigs.InterRouteConfigurationService;
+import org.osdfreactive.configuration.InterRouteConfigurationService;
 import org.osdfreactive.policies.DefaultPolicy;
 import org.osdfreactive.policyparser.PathSelectionInterface;
 import org.osdfreactive.policyparser.PolicyParserInterface;
@@ -69,8 +68,8 @@ import static org.slf4j.LoggerFactory.getLogger;
  */
 @Component(immediate = true)
 @Service
-public class InterRouteAction
-        extends AbstractAction
+public class InterRouteOperation
+        extends AbstractOperation
         implements InterRouteActionInterface {
 
 

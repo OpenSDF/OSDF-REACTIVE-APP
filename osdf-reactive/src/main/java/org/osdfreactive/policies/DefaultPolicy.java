@@ -19,7 +19,7 @@ package org.osdfreactive.policies;
 import org.onosproject.net.ConnectPoint;
 import org.onosproject.net.HostId;
 import org.onosproject.net.region.Region;
-import org.osdfreactive.abstractactions.ActionList;
+import org.osdfreactive.networkoperations.OperationsList;
 import org.osdfreactive.policyparser.PathSelectionAlgos;
 import org.osdfreactive.policystorage.PolicyState;
 import org.osdfreactive.trafficprofiles.DefaultTrafficProfile;
@@ -36,7 +36,7 @@ public class DefaultPolicy extends Policy {
     List<ConnectPoint> connectPointList;
     List<HostId> srcHostsList;
     List<HostId> dstHostsList;
-    ActionList action;
+    OperationsList action;
     Region srcRegion;
     Region dstRegion;
     PathSelectionAlgos pathSelectionAlgo;
@@ -91,7 +91,7 @@ public class DefaultPolicy extends Policy {
                             DefaultTrafficProfile trafficProfile,
                             Region srcRegion,
                             Region dstRegion,
-                            ActionList action) {
+                            OperationsList action) {
 
         super(policyId, priority, policyState, version);
         this.trafficProfile = trafficProfile;
@@ -140,7 +140,7 @@ public class DefaultPolicy extends Policy {
      *
      * @return abstract action
      */
-    public ActionList getAction() {
+    public OperationsList getAction() {
         return action;
     }
 
@@ -209,7 +209,7 @@ public class DefaultPolicy extends Policy {
         protected List<ConnectPoint> connectPointList;
         protected List<HostId> srcHostsList;
         protected List<HostId> dstHostsList;
-        protected ActionList action;
+        protected OperationsList action;
         protected PathSelectionAlgos pathSelectionAlgo;
         protected Region srcRegion;
         protected Region dstRegion;
@@ -315,7 +315,7 @@ public class DefaultPolicy extends Policy {
          * @param action action
          * @return this builder
          */
-        public Builder action(ActionList action) {
+        public Builder action(OperationsList action) {
             this.action = action;
             return this;
         }

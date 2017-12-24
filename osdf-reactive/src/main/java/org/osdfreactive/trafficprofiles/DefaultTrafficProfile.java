@@ -17,8 +17,8 @@
 package org.osdfreactive.trafficprofiles;
 
 import org.onosproject.net.flow.criteria.Criterion;
-import org.osdfreactive.applicationinfo.ApplicationTypes;
-import org.osdfreactive.applicationinfo.TrafficClasses;
+import org.osdfreactive.appsinfo.ApplicationTypes;
+import org.osdfreactive.appsinfo.TrafficClasses;
 
 import java.util.Set;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.interrouteconfigs;
+package org.osdfreactive.configuration;
 
 import com.google.common.base.MoreObjects;
 import org.onlab.packet.IpAddress;

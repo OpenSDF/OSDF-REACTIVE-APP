@@ -14,22 +14,19 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.appsinfo;
 
 /**
- * High level network operations list.
+ * Different types of traffic classes.
  */
-public enum ActionList {
+public enum TrafficClasses {
     /**
-     * Routing a traffic inside a region (intra-site-routing).
+     * Real time traffic class.
      */
-
-    INTRA_ROUTE,
-
+    REAL_TIME,
     /**
-     * Routing a traffic between regions (inter-site-routing).
+     * Best effort delivery traffic class.
      */
-    INTER_ROUTE,
-
+    BEST_EFFORT
 
 }

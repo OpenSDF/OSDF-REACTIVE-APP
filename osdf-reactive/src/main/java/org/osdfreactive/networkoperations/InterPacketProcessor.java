@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.networkoperations;
 
 
 import org.apache.felix.scr.annotations.Activate;
@@ -44,7 +44,7 @@ import org.onosproject.net.packet.PacketContext;
 import org.onosproject.net.packet.PacketPriority;
 import org.onosproject.net.packet.PacketService;
 import org.onosproject.net.region.Region;
-import org.osdfreactive.interrouteconfigs.InterRouteConfigurationService;
+import org.osdfreactive.configuration.InterRouteConfigurationService;
 import org.osdfreactive.policies.DefaultPolicy;
 import org.osdfreactive.policies.Policy;
 import org.osdfreactive.policystorage.PolicyService;
@@ -65,7 +65,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 @Component(immediate = true)
 @Service
 public class InterPacketProcessor
-        extends AbstractAction
+        extends AbstractOperation
         implements RouteActionInterface {
 
 
@@ -230,7 +230,7 @@ public class InterPacketProcessor
                     String pktDstRegion;
 
                     DefaultPolicy policy = null;
-                    ActionList action = null;
+                    OperationsList action = null;
                     //log.info("IPv4 packet");
                     if (checkCurrentPolicies() == StatusCodes.STATUS_OK) {
 
@@ -255,7 +255,7 @@ public class InterPacketProcessor
                             policysrcRegion = policy.getSrcRegion();
                             policydstRegion = policy.getDstRegion();
 
-                            if (action == ActionList.INTER_ROUTE && ((policysrcRegion.id().toString().equals(pktSrcRegion)
+                            if (action == OperationsList.INTER_ROUTE && ((policysrcRegion.id().toString().equals(pktSrcRegion)
                                     && policydstRegion.id().toString().equals(pktDstRegion))
                                     || (policysrcRegion.id().toString().equals(pktDstRegion)
                                     && policydstRegion.id().toString().equals(pktSrcRegion)))) {

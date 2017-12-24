@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.interrouteconfigs;
+package org.osdfreactive.configuration;
 
 import org.onlab.packet.IpAddress;
 import org.onlab.packet.IpPrefix;

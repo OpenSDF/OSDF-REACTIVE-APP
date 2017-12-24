@@ -14,17 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
-
-import org.onosproject.net.packet.PacketContext;
-import org.osdfreactive.policies.DefaultPolicy;
-
 /**
- * An interface for intra-domain-routing abstract operation.
+ * High level information about well known transport protocols.
  */
-public interface IntraRouteActionInterface {
-
-    void intraRouteProcess(DefaultPolicy policy, PacketContext context);
-
-
-}
+package org.osdfreactive.transprotocolsinfo;

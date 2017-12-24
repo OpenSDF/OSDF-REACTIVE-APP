@@ -14,12 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
-
 /**
- * An interface for intra and inter domain routing abstract operations.
+ * High Level application information.
  */
-public interface RouteActionInterface {
-
-
-}
+package org.osdfreactive.appsinfo;

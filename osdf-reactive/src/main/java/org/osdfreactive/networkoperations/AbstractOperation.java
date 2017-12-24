@@ -14,7 +14,12 @@
  * limitations under the License.
  */
 
+package org.osdfreactive.networkoperations;
+
 /**
- * Configuration module.
+ * High level abstract actions for configuring and monitoring a network.
  */
-package org.osdfreactive.interrouteconfigs;
+public abstract class AbstractOperation {
+
+
+}

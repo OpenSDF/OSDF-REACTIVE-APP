@@ -15,6 +15,6 @@
  */
 
 /**
- * High level network operations.
+ * Configuration module.
  */
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.configuration;

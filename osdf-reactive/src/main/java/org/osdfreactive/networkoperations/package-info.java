@@ -15,6 +15,6 @@
  */
 
 /**
- * High Level application information.
+ * High level network operations.
  */
-package org.osdfreactive.applicationinfo;
+package org.osdfreactive.networkoperations;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.applicationinfo;
+package org.osdfreactive.appsinfo;
 
 /**
  * An enum data structure for well known application ports.

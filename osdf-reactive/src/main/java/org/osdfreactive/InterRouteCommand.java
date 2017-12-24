@@ -27,7 +27,7 @@ import org.onosproject.net.HostId;
 import org.onosproject.net.device.DeviceService;
 import org.onosproject.net.region.RegionId;
 import org.onosproject.net.region.RegionService;
-import org.osdfreactive.abstractactions.ActionList;
+import org.osdfreactive.networkoperations.OperationsList;
 import org.osdfreactive.policies.CreatePolicyInterface;
 import org.osdfreactive.policies.DefaultPolicy;
 import org.osdfreactive.policyparser.PathSelectionAlgos;
@@ -198,7 +198,7 @@ public class InterRouteCommand extends AbstractShellCommand {
                 trafficProfile,
                 regionService.getRegion(srcRegionId),
                 regionService.getRegion(dstRegionId),
-                ActionList.INTER_ROUTE);
+                OperationsList.INTER_ROUTE);
 
 
         policy = (DefaultPolicy) createPolicy.getPolicy();

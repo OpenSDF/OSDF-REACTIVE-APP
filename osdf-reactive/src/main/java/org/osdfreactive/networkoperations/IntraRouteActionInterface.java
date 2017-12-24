@@ -14,21 +14,17 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.networkoperations;
 
 import org.onosproject.net.packet.PacketContext;
 import org.osdfreactive.policies.DefaultPolicy;
 
 /**
- * An interface for inter-domain-routing abstract operation.
+ * An interface for intra-domain-routing abstract operation.
  */
-public interface InterRouteActionInterface {
+public interface IntraRouteActionInterface {
 
-    /**
-     * Process an incoming packet based on a given policy.
-     * @param policy a policy
-     * @param context packet context
-     */
-    void interRouteProcess(DefaultPolicy policy, PacketContext context);
+    void intraRouteProcess(DefaultPolicy policy, PacketContext context);
+
 
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.transportprotocolinfo;
+package org.osdfreactive.transprotocolsinfo;
 
 /**
  * An enum data structure for well known transport protocols.

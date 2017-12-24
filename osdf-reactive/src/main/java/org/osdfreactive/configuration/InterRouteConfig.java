@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.interrouteconfigs;
+package org.osdfreactive.configuration;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.collect.Sets;

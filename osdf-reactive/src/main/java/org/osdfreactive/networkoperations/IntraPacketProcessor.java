@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.abstractactions;
+package org.osdfreactive.networkoperations;
 
 
 import com.google.common.collect.Maps;
@@ -39,7 +39,7 @@ import org.onosproject.net.packet.PacketPriority;
 import org.onosproject.net.packet.PacketService;
 import org.onosproject.net.region.Region;
 import org.onosproject.net.region.RegionService;
-import org.osdfreactive.interrouteconfigs.InterRouteConfigurationService;
+import org.osdfreactive.configuration.InterRouteConfigurationService;
 import org.osdfreactive.policies.DefaultPolicy;
 import org.osdfreactive.policies.DefaultPolicyId;
 import org.osdfreactive.policies.Policy;
@@ -60,7 +60,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 @Component(immediate = true)
 @Service
-public class IntraPacketProcessor extends AbstractAction implements RouteActionInterface {
+public class IntraPacketProcessor extends AbstractOperation implements RouteActionInterface {
 
 
     private final Logger log = getLogger(getClass());
@@ -208,7 +208,7 @@ public class IntraPacketProcessor extends AbstractAction implements RouteActionI
             String pktDstRegion;
 
             DefaultPolicy policy = null;
-            ActionList action = null;
+            OperationsList action = null;
 
             Map<DefaultPolicyId, Policy> tempMap = Maps.newConcurrentMap();
 
@@ -238,7 +238,7 @@ public class IntraPacketProcessor extends AbstractAction implements RouteActionI
                     policysrcRegion = policy.getSrcRegion();
                     policydstRegion = policy.getDstRegion();
 
-                    if ((action == ActionList.INTRA_ROUTE)
+                    if ((action == OperationsList.INTRA_ROUTE)
                             && policysrcRegion.id().toString().equals(pktSrcRegion)
                             && policydstRegion.id().toString().equals(pktDstRegion)) {
 

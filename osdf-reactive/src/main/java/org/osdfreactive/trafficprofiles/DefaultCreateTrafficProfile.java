@@ -18,8 +18,8 @@ package org.osdfreactive.trafficprofiles;
 
 import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Service;
-import org.osdfreactive.applicationinfo.ApplicationTypes;
-import org.osdfreactive.applicationinfo.TrafficClasses;
+import org.osdfreactive.appsinfo.ApplicationTypes;
+import org.osdfreactive.appsinfo.TrafficClasses;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 

@@ -24,7 +24,7 @@ import org.apache.felix.scr.annotations.Service;
 import org.onosproject.net.ConnectPoint;
 import org.onosproject.net.HostId;
 import org.onosproject.net.region.Region;
-import org.osdfreactive.abstractactions.ActionList;
+import org.osdfreactive.networkoperations.OperationsList;
 import org.osdfreactive.policyparser.PathSelectionAlgos;
 import org.osdfreactive.policystorage.PolicyState;
 import org.osdfreactive.trafficprofiles.DefaultTrafficProfile;
@@ -91,7 +91,7 @@ public class DefaultCreatePolicy
                              TrafficProfile trafficProfile,
                              Region srcRegion,
                              Region dstRegion,
-                             ActionList action) {
+                             OperationsList action) {
 
         DefaultPolicyId defaultPolicyId;
         defaultPolicyId = new DefaultPolicyId();

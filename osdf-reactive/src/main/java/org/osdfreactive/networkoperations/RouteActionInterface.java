@@ -14,7 +14,12 @@
  * limitations under the License.
  */
 
+package org.osdfreactive.networkoperations;
+
 /**
- * High level information about well known transport protocols.
+ * An interface for intra and inter domain routing abstract operations.
  */
-package org.osdfreactive.transportprotocolinfo;
+public interface RouteActionInterface {
+
+
+}

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.osdfreactive.applicationinfo;
+package org.osdfreactive.appsinfo;
 
-import org.osdfreactive.transportprotocolinfo.TransportProtocols;
+import org.osdfreactive.transprotocolsinfo.TransportProtocols;
 
 /**
  * An enum data structure for different types of applications.
