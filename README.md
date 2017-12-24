@@ -22,6 +22,8 @@ After installing ONOS and OSDF app successfully, you will be able to configure a
    - [Intra site routing (Example #2)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-2%29)
 
 
-#### Note: If you plan to use this application for your research, please cite our work: 
+#### Note 1: If you plan to use this application for your research, please cite our work: 
 https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Conference-papers
 
+#### Note 2: Java doc link:
+https://opensdf.github.io/OSDF-REACTIVE-APP/
