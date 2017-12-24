@@ -17,4 +17,4 @@
 /**
  * High level network policies.
  */
-package org.onosproject.incubator.net.osdf.policies;
+package org.osdfreactive.policies;

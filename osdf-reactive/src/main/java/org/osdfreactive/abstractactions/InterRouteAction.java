@@ -64,7 +64,8 @@ import java.util.Set;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
- * Inter-route network traffic between regions.
+ * Inter-route network traffic between regions
+ * based on high level polices.
  */
 @Component(immediate = true)
 @Service
@@ -107,7 +108,6 @@ public class InterRouteAction
 
     /**
      * Service activation method.
-     *
      * @param context component context
      */
     @Activate
@@ -171,7 +171,7 @@ public class InterRouteAction
 
 
     /**
-     * Local inter route function to install OpenFlow rules based
+     * Local inter route function for installing OpenFlow rules based
      * on high level policies.
      *
      * @param pkt     Inbound packet
@@ -342,6 +342,12 @@ public class InterRouteAction
 
     }
 
+    /**
+     * Returns an incoming packet to the network
+     * by generation and sending a packet out.
+     * @param context packet processing context.
+     * @param connectPoint a connection point.
+     */
     private void forwardPacketToDst(PacketContext context,
                                     ConnectPoint connectPoint) {
         TrafficTreatment treatment = DefaultTrafficTreatment.builder()
@@ -355,7 +361,6 @@ public class InterRouteAction
 
     /**
      * Inter-route processor.
-     *
      * @param context packet processing context
      */
 

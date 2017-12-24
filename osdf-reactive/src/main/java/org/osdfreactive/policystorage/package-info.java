@@ -17,6 +17,6 @@
 /**
  * policy storage subsystem.
  */
-package org.onosproject.incubator.net.osdf.policystorage;
+package org.osdfreactive.policystorage;
 
 

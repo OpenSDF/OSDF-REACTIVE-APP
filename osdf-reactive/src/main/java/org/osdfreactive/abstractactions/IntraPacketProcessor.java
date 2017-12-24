@@ -58,7 +58,6 @@ import static org.slf4j.LoggerFactory.getLogger;
  * Packet Processor for high level intra-domain abstract operations.
  */
 
-
 @Component(immediate = true)
 @Service
 public class IntraPacketProcessor extends AbstractAction implements RouteActionInterface {

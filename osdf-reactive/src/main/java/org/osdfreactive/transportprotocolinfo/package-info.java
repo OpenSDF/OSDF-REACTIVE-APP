@@ -17,4 +17,4 @@
 /**
  * High level information about well known transport protocols.
  */
-package org.onosproject.incubator.net.osdf.transportprotocolinfo;
+package org.osdfreactive.transportprotocolinfo;

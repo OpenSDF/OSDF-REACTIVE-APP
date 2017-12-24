@@ -17,6 +17,6 @@
 /**
  * status codes.
  */
-package org.onosproject.incubator.net.osdf.statuscodes;
+package org.osdfreactive.statuscodes;
 
 

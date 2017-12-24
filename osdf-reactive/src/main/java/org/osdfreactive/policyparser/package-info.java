@@ -17,6 +17,6 @@
 /**
  * policy parser subsystem.
  */
-package org.onosproject.incubator.net.osdf.policyparser;
+package org.osdfreactive.policyparser;
 
 

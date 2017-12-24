@@ -17,4 +17,4 @@
 /**
  * High level data traffic profiles.
  */
-package org.onosproject.incubator.net.osdf.trafficprofiles;
+package org.osdfreactive.trafficprofiles;

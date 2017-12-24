@@ -59,13 +59,14 @@ import java.util.NoSuchElementException;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
- * Packet Processor for high level inter-domain abstract operations.
+ * A packet Processor for high level inter-domain abstract operations.
  */
-
 
 @Component(immediate = true)
 @Service
-public class InterPacketProcessor extends AbstractAction implements RouteActionInterface {
+public class InterPacketProcessor
+        extends AbstractAction
+        implements RouteActionInterface {
 
 
     private final Logger log = getLogger(getClass());
@@ -142,7 +143,7 @@ public class InterPacketProcessor extends AbstractAction implements RouteActionI
     }
 
     /**
-     * Packet processor responsible for extracting low level match fields
+     * A packet processor is responsible for extracting low level match fields
      * based on current active polices.
      */
     private class RoutingPacketProcessor implements org.onosproject.net.packet.PacketProcessor {

@@ -17,4 +17,4 @@
 /**
  * High level abstract actions.
  */
-package org.onosproject.incubator.net.osdf.abstractactions;
+package org.osdfreactive.abstractactions;

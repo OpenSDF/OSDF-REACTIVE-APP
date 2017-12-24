@@ -17,4 +17,4 @@
 /**
  * Configuration subsystem for inter-routing.
  */
-package org.onosproject.incubator.net.osdf.interrouteconfigs;
+package org.osdfreactive.interrouteconfigs;

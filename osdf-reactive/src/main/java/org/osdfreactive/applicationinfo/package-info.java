@@ -17,4 +17,4 @@
 /**
  * High Level application information.
  */
-package org.onosproject.incubator.net.osdf.applicationinfo;
+package org.osdfreactive.applicationinfo;
