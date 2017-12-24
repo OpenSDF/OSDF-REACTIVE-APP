@@ -17,14 +17,13 @@
 package org.osdfreactive.trafficprofiles;
 
 /**
- * An Interface for creating traffic profiles.
+ * Creating traffic profiles interface.
  */
 public interface CreateTrafficProfile {
 
 
     /**
      * Creates a traffic profile instance based on application type and traffic profile id.
-     *
      * @param applicationID   Application ID.
      * @param applicationType Application Type.
      */
@@ -32,7 +31,6 @@ public interface CreateTrafficProfile {
 
     /**
      * Returns a traffic profile.
-     *
      * @return a traffic profile
      */
     TrafficProfile getTrafficProfile();

@@ -70,17 +70,6 @@ public class PolicyManager extends
         return policyStore.getPolicies();
     }
 
-    @Override
-    public void addPending(Policy policy) {
-        policyStore.addPending(policy);
-
-
-    }
-
-    @Override
-    public Iterable<Policy> getPendingPolicies() {
-        return policyStore.getPendingPolicies();
-    }
 
     @Override
     public void addCurrent(Policy policy) {

@@ -27,11 +27,28 @@ import org.osdfreactive.policies.DefaultPolicy;
  * Policy Parser interface.
  */
 public interface PolicyParserInterface {
+
+    /**
+     * General intra-domain traffic selector builder based on a given policy.
+     * @param pkt Inbound packet
+     * @param ethPkt Ethernet packet
+     * @param link
+     * @param policy a policy
+     * @return Traffic selector builder
+     */
     TrafficSelector.Builder intraBuildTrafficSelector(InboundPacket pkt,
                                                       Ethernet ethPkt,
                                                       Link link, DefaultPolicy policy);
 
 
+    /**
+     * General inter-domain traffic selector builder based on a given policy.
+     * @param pkt Inbound packet
+     * @param ethPkt Ethernet packet
+     * @param dstMac
+     * @param policy a policy
+     * @return Traffic selector builder
+     */
     TrafficSelector.Builder interBuildTrafficSelector(InboundPacket pkt,
                                                       Ethernet ethPkt,
                                                       MacAddress dstMac,

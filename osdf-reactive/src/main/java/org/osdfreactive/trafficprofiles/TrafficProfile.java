@@ -17,7 +17,7 @@
 package org.osdfreactive.trafficprofiles;
 
 /**
- * Abstraction of high level traffic profiles.
+ * High level traffic profiles.
  */
 public abstract class TrafficProfile {
 

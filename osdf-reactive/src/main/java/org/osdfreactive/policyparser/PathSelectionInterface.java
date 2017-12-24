@@ -22,7 +22,7 @@ import org.osdfreactive.policies.DefaultPolicy;
 import java.util.Set;
 
 /**
- * An interface for path selection algorithms.
+ * Path selection algorithms interface.
  */
 public interface PathSelectionInterface {
 

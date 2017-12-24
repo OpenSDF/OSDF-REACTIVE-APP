@@ -42,7 +42,7 @@ import static org.slf4j.LoggerFactory.getLogger;
 
 
 /**
- * Policy parser for web application (HTTP).
+ * Policy parser for web applications (HTTP).
  */
 @Component(immediate = true)
 @Service

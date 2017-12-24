@@ -32,10 +32,6 @@ public interface PolicyService extends ListenerService<PolicyEvent, PolicyListen
 
     Iterable<Policy> getPolicies();
 
-    void addPending(Policy policy);
-
-    Iterable<Policy> getPendingPolicies();
-
 
     void addCurrent(Policy policy);
 

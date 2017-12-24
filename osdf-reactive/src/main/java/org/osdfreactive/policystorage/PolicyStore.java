@@ -34,10 +34,6 @@ public interface PolicyStore extends Store<PolicyEvent, PolicyStoreDelegate> {
 
     Iterable<Policy> getPolicies();
 
-    void addPending(Policy policy);
-
-    Iterable<Policy> getPendingPolicies();
-
     Iterable<Policy> getCurrentPolicies();
 
     void addCurrent(Policy policy);

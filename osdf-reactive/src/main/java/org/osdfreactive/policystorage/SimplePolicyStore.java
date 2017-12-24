@@ -57,41 +57,11 @@ public class SimplePolicyStore
     private final Logger log = getLogger(getClass());
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected FlowRuleService flowRuleService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected StorageService storageService;
-    private ConsistentMap<DefaultPolicyId, Policy> currentPolicyConsistentMap;
-    private ConsistentMap<DefaultPolicyId, Policy> pendingPolicyConsistentMap;
     private Map<DefaultPolicyId, Policy> current = Maps.newConcurrentMap();
-    private Map<DefaultPolicyId, Policy> pending = Maps.newConcurrentMap();
 
     @Activate
     public void activate() {
         log.info("Started");
-
-        /*KryoNamespace.Builder serializer = KryoNamespace.newBuilder()
-                .register(KryoNamespaces.API)
-                .register(DefaultPolicyId.class)
-                .register(org.slf4j.LoggerFactory.class)
-                .register(PolicyManager.class)
-                .register(PolicyManager.InternalStoreDelegate.class)
-                .register(PolicyEvent.class);
-
-
-
-        currentPolicyConsistentMap = storageService.<DefaultPolicyId, Policy>consistentMapBuilder()
-                .withSerializer(Serializer.using(serializer.build()))
-                .withName("current-policy-map")
-                .build();
-
-        pendingPolicyConsistentMap = storageService.<DefaultPolicyId, Policy>consistentMapBuilder()
-                .withSerializer(Serializer.using(serializer.build()))
-                .withName("pending-policy-map")
-                .build();
-
-
-        current = currentPolicyConsistentMap.asJavaMap();
-        pending = pendingPolicyConsistentMap.asJavaMap();*/
-
 
     }
 
@@ -105,21 +75,6 @@ public class SimplePolicyStore
         return current.values();
     }
 
-    /**
-     * @param policy a policy
-     */
-    @Override
-    public void addPending(Policy policy) {
-        pending.put((DefaultPolicyId) policy.getPolicyId(), policy);
-        PolicyEvent.getEvent(policy).ifPresent(this::notifyDelegate);
-
-
-    }
-
-    @Override
-    public Iterable<Policy> getPendingPolicies() {
-        return pending.values();
-    }
 
     @Override
     public Iterable<Policy> getCurrentPolicies() {

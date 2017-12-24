@@ -19,7 +19,7 @@ package org.osdfreactive.policyparser;
 import org.onosproject.net.flow.TrafficSelector;
 
 /**
- * Abstract class for policy parser.
+ * Policy parser abstract class.
  */
 public abstract class AbstractPolicyParser {
     protected TrafficSelector.Builder selectorBuilder;

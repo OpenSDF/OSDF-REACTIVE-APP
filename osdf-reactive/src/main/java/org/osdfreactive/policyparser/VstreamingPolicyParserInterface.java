@@ -38,6 +38,13 @@ public interface VstreamingPolicyParserInterface {
                                                             DefaultPolicy policy);
 
 
+    /**
+     * Traffic selector for routing video streaming traffic between regions
+     * @param pkt Inbound packet
+     * @param ethPkt Ethernet packet
+     * @param policy a policy
+     * @return traffic selector builder
+     */
     TrafficSelector.Builder interVideoStreamTrafficSelector(InboundPacket pkt,
                                                             Ethernet ethPkt,
                                                             DefaultPolicy policy);

@@ -18,7 +18,7 @@
 package org.osdfreactive.policyparser;
 
 /**
- * Abstract class for path selection algorithms.
+ * Path selection algorithms abstract class.
  */
 public abstract class AbstractPathSelection {
 
