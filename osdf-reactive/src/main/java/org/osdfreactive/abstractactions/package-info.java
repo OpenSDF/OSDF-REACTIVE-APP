@@ -15,6 +15,6 @@
  */
 
 /**
- * High level abstract actions.
+ * High level network operations.
  */
 package org.osdfreactive.abstractactions;

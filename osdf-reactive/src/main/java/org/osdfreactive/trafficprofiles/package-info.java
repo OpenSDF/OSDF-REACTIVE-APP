@@ -15,6 +15,6 @@
  */
 
 /**
- * High level data traffic profiles.
+ * High level data traffic profiles information.
  */
 package org.osdfreactive.trafficprofiles;

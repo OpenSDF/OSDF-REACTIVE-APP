@@ -15,7 +15,7 @@
  */
 
 /**
- * policy storage subsystem.
+ * Policy storage module.
  */
 package org.osdfreactive.policystorage;
 

@@ -15,6 +15,6 @@
  */
 
 /**
- * Configuration subsystem for inter-routing.
+ * Configuration module.
  */
 package org.osdfreactive.interrouteconfigs;

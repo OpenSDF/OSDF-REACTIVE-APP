@@ -15,7 +15,7 @@
  */
 
 /**
- * policy parser subsystem.
+ * Policy parser module.
  */
 package org.osdfreactive.policyparser;
 

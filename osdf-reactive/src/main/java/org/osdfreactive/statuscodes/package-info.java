@@ -15,7 +15,7 @@
  */
 
 /**
- * status codes.
+ * Status codes.
  */
 package org.osdfreactive.statuscodes;
 
