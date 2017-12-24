@@ -1,0 +1,32 @@
+{
+  "apps": {
+    "org.onosproject.InterRouting": {
+      "InterRouting": {
+        "ip4LocalPrefixes": [
+          {
+            "ipPrefix": "10.0.1.0/24",
+            "type": "PRIVATE",
+            "gatewayIp": "10.0.1.254",
+            "regionId": "siteA",
+            "prefixlen": "24"
+          },
+          {
+            "ipPrefix": "10.0.2.0/24",
+            "type": "PRIVATE",
+            "gatewayIp": "10.0.2.254",
+            "regionId": "siteB",
+            "prefixlen": "24"
+          },
+            {
+            "ipPrefix": "10.0.3.0/24",
+            "type": "PRIVATE",
+            "gatewayIp": "10.0.3.254",
+            "regionId": "siteC",
+            "prefixlen": "24"
+          }
+        ],
+        "virtualGatewayMacAddress": "00:00:00:00:00:01"
+      }
+    }
+  }
+}
