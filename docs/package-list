@@ -1,10 +1,10 @@
 org.osdfreactive
-org.osdfreactive.abstractactions
-org.osdfreactive.applicationinfo
-org.osdfreactive.interrouteconfigs
+org.osdfreactive.appsinfo
+org.osdfreactive.configuration
+org.osdfreactive.networkoperations
 org.osdfreactive.policies
 org.osdfreactive.policyparser
 org.osdfreactive.policystorage
 org.osdfreactive.statuscodes
 org.osdfreactive.trafficprofiles
-org.osdfreactive.transportprotocolinfo
+org.osdfreactive.transprotocolsinfo
