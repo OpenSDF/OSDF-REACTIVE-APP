@@ -34,7 +34,6 @@ import org.onosproject.net.Host;
 import org.onosproject.net.HostId;
 import org.onosproject.net.Link;
 import org.onosproject.net.Path;
-import org.onosproject.net.device.DeviceService;
 import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.net.flow.DefaultTrafficSelector;
 import org.onosproject.net.flow.DefaultTrafficTreatment;
@@ -105,6 +104,7 @@ public class InterRouteOperation
 
     /**
      * Service activation method.
+     *
      * @param context component context
      */
     @Activate
@@ -231,8 +231,8 @@ public class InterRouteOperation
             }
 
             //forwardPacketToDst(context,dst.location());
-            //context.treatmentBuilder().setOutput(dst.location().port());
-            //context.send();
+            context.treatmentBuilder().setOutput(dst.location().port());
+            context.send();
 
         } else {
             Set<Path> endToEndPaths =
@@ -331,8 +331,8 @@ public class InterRouteOperation
                 }
             }
             //forwardPacketToDst(context,firstLink.src());
-            //context.treatmentBuilder().setOutput(firstLink.src().port());
-            //context.send();
+            context.treatmentBuilder().setOutput(firstLink.src().port());
+            context.send();
 
         }
 
@@ -342,7 +342,8 @@ public class InterRouteOperation
     /**
      * Returns an incoming packet to the network
      * by generation and sending a packet out.
-     * @param context packet processing context.
+     *
+     * @param context      packet processing context.
      * @param connectPoint a connection point.
      */
     private void forwardPacketToDst(PacketContext context,
@@ -358,6 +359,7 @@ public class InterRouteOperation
 
     /**
      * Inter-route processor.
+     *
      * @param context packet processing context
      */
 

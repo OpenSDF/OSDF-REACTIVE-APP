@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  Route data traffic based on a given network policy and between two regions.
+ * Route data traffic based on a given network policy and between two regions.
  */
 
 

@@ -29,8 +29,6 @@ import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.net.flow.FlowRule;
 import org.onosproject.net.flow.FlowRuleService;
 import org.onosproject.store.AbstractStore;
-import org.onosproject.store.service.ConsistentMap;
-import org.onosproject.store.service.StorageService;
 import org.osdfreactive.policies.DefaultPolicyId;
 import org.osdfreactive.policies.Policy;
 import org.slf4j.Logger;
@@ -163,6 +161,7 @@ public class SimplePolicyStore
 
     /**
      * Return the flow rules list.
+     *
      * @return flow rule list
      */
     @Override

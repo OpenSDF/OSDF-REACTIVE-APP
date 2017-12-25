@@ -30,7 +30,8 @@ public interface PolicyParserInterface {
 
     /**
      * General intra-domain traffic selector builder based on a given policy.
-     * @param pkt Inbound packet
+     *
+     * @param pkt    Inbound packet
      * @param ethPkt Ethernet packet
      * @param link
      * @param policy a policy
@@ -43,7 +44,8 @@ public interface PolicyParserInterface {
 
     /**
      * General inter-domain traffic selector builder based on a given policy.
-     * @param pkt Inbound packet
+     *
+     * @param pkt    Inbound packet
      * @param ethPkt Ethernet packet
      * @param dstMac
      * @param policy a policy

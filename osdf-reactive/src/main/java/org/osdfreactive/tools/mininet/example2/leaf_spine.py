@@ -1,7 +1,7 @@
-from mininet.net import Mininet
-from mininet.topo import Topo
 from mininet.cli import CLI
+from mininet.net import Mininet
 from mininet.node import RemoteController, Host
+from mininet.topo import Topo
 
 
 class IpHost(Host):

@@ -33,7 +33,6 @@ import org.onosproject.net.HostId;
 import org.onosproject.net.Link;
 import org.onosproject.net.Path;
 import org.onosproject.net.config.NetworkConfigService;
-import org.onosproject.net.device.DeviceService;
 import org.onosproject.net.flow.DefaultFlowRule;
 import org.onosproject.net.flow.DefaultTrafficSelector;
 import org.onosproject.net.flow.DefaultTrafficTreatment;
@@ -41,7 +40,6 @@ import org.onosproject.net.flow.FlowRuleService;
 import org.onosproject.net.flow.TrafficSelector;
 import org.onosproject.net.flow.TrafficTreatment;
 import org.onosproject.net.host.HostService;
-import org.onosproject.net.link.LinkService;
 import org.onosproject.net.packet.DefaultOutboundPacket;
 import org.onosproject.net.packet.InboundPacket;
 import org.onosproject.net.packet.OutboundPacket;
@@ -231,8 +229,8 @@ public class IntraRouteOperation extends
 
             }
 
-            //context.treatmentBuilder().setOutput(dst.location().port());
-            //context.send();
+            context.treatmentBuilder().setOutput(dst.location().port());
+            context.send();
             //forwardPacketToDst(context,dst.location());
         } else {
             Set<Path> endToEndPaths =
@@ -303,11 +301,11 @@ public class IntraRouteOperation extends
             }
 
 
-
             //forwardPacketToDst(context,firstLink.src());
-            //log.info("sending packet: {}", context);
-            //context.treatmentBuilder().setOutput(firstLink.src().port());
-            //context.send();
+
+            context.treatmentBuilder().setOutput(firstLink.src().port());
+            context.send();
+            log.info("sending packet: {}", context);
 
         }
 

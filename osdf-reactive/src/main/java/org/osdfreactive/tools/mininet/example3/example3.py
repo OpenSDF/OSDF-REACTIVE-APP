@@ -1,15 +1,11 @@
 from mininet.node import Controller, OVSSwitch, UserSwitch
-from mininet.nodelib import LinuxBridge
 from mininet.net import Mininet
-from mininet.topo import SingleSwitchTopo, Topo
 from mininet.log import setLogLevel, info, warn, error, debug
 from mininet.cli import CLI
 from mininet.util import quietRun, specialClass
-from mininet.examples.controlnet import MininetFacade
 from mininet.topo import Topo
 from mininet.link import TCLink
-from mininet.node import RemoteController, UserSwitch, Host
-
+from mininet.node import RemoteController, Host
 
 
 class MyTopo(Topo):
@@ -97,8 +93,6 @@ class MyTopo(Topo):
         self.addLink(swRegion3, swRegion2)
 
 
-
-
 class IpHost(Host):
     def __init__(self, name, gateway, *args, **kwargs):
         super(IpHost, self).__init__(name, *args, **kwargs)
@@ -109,8 +103,6 @@ class IpHost(Host):
         mtu = "ifconfig " + self.name + "-eth0 mtu 1490"
         self.cmd(mtu)
         self.cmd('ip route add default via %s' % self.gateway)
-
-
 
 
 if __name__ == '__main__':

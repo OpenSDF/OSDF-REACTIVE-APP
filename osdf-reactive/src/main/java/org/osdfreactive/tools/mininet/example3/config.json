@@ -17,7 +17,7 @@
             "regionId": "siteB",
             "prefixlen": "24"
           },
-            {
+          {
             "ipPrefix": "10.0.3.0/24",
             "type": "PRIVATE",
             "gatewayIp": "10.0.3.254",
