@@ -89,8 +89,6 @@ public class InterRouteOperation
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected HostService hostService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected DeviceService deviceService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected FlowRuleService flowRuleService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected InterRouteConfigurationService config;

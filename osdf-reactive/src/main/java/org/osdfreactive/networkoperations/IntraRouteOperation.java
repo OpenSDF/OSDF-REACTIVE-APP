@@ -79,12 +79,7 @@ public class IntraRouteOperation extends
     private static final int DEFAULT_PRIORITY = 10;
     private static final int TABLE_ID = 0;
     private final Logger log = getLogger(getClass());
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected LinkService linkService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected NetworkConfigService networkConfigService;
-    @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
-    protected DeviceService deviceService;
+
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
     protected PacketService packetService;
     @Reference(cardinality = ReferenceCardinality.MANDATORY_UNARY)
@@ -310,6 +305,7 @@ public class IntraRouteOperation extends
 
 
             //forwardPacketToDst(context,firstLink.src());
+            //log.info("sending packet: {}", context);
             //context.treatmentBuilder().setOutput(firstLink.src().port());
             //context.send();
 
