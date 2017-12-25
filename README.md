@@ -12,7 +12,7 @@
     - *git clone https://github.com/OpenSDF/OSDF-REACTIVE-APP.git*
     - *cd osdf-reactive*
     - *mvn clean install* 
-3.  Third, after successfully compiling the application, you should install it as an ONOS app using the **onos-app** script.
+3.  Third, after compiling the application successfully, you should install it as an ONOS app using the **onos-app** script as follows:
     - *onos-app localhost install target/osdf-reactive-1.0-SNAPSHOT.oar* 
 4.  Forth, after installing the *OSDF* app successfully, you should activate it using the following command from onos cli.
     - *onos 127.0.0.1* 
