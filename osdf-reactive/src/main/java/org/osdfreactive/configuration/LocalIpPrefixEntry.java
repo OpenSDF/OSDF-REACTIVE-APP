@@ -143,10 +143,7 @@ public class LocalIpPrefixEntry {
          * Public IP prefixes should be exchanged by eBGP.
          */
         PUBLIC,
-        /**
-         * Private IP prefixes should be used only locally and not exchanged
-         * by eBGP.
-         */
+
         PRIVATE,
         /**
          * For IP prefixes in blacklist.

@@ -32,8 +32,8 @@ class MultiPath(Topo):
 
        
         self.addLink(switches[0], h1)
-        self.addLink(switches[0], h2)
-        self.addLink(switches[3], h3)
+        self.addLink(switches[1], h2)
+        self.addLink(switches[2], h3)
         self.addLink(switches[3], h4)
  
 
