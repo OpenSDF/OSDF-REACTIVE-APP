@@ -25,7 +25,7 @@
 After installing ONOS and OSDF app successfully, you will be able to configure a network using high level abstractions that OSDF provides. To test OSDF application, we provide a set of examples as follows: 
    - [Intra site routing (Example #1)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-1%29)
    - [Intra site routing (Example #2)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-2%29)
-   - [Intra site routing (Firewall - Example #3)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-3--Firewall%29)
+   - [Intra site routing (Example #3- Firewall)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Intra-site-routing-%28Example-3--Firewall%29)
    - [Inter site routing (Example #1)](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Inter-site-routing-%28Example-1%29)
 
 #### Note 1: If you plan to use this application for your research, please cite our work: 
