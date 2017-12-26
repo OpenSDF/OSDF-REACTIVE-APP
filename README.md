@@ -1,5 +1,6 @@
 ## Overview
   - [OSDF Architecutre](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/Overview)
+  - [OSDF Policy Lanaguage Syntax](https://github.com/OpenSDF/OSDF-REACTIVE-APP/wiki/OSDF-Policy-Language-Syntax)
 
 
 ## Getting Started
