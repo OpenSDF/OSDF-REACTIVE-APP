@@ -7,12 +7,14 @@
 
 ### Installation
 1. First, you should install and run ONOS on your local machine using the guideline that have been posted here: [Developer Quick Start](https://wiki.onosproject.org/display/ONOS/Developer+Quick+Start). 
-     - #### Note: You will need to export several environment variables. The ONOS source comes with a sample *bash_profile* that can set these variables for you. To do so, follow the instructions that have been posted here: [Set Enivronment Variables](https://wiki.onosproject.org/display/ONOS/ONOS+from+Scratch#ONOSfromScratch-3.Setupyourbuildenvironment)
+     - #### Note 1: You will need to export several environment variables. The ONOS source comes with a sample *bash_profile* that can set these variables for you. To do so, follow the instructions that have been posted here: [Set Enivronment Variables](https://wiki.onosproject.org/display/ONOS/ONOS+from+Scratch#ONOSfromScratch-3.Setupyourbuildenvironment)
+     - #### Note 2: Run onos-buck-publish-local to put onos artifcats in the .m2 repo. 
 
 2.  Second, clone this repoistory and compile OSDF application using the following commands:
     - *git clone https://github.com/OpenSDF/OSDF-REACTIVE-APP.git*
     - *cd osdf-reactive*
     - *mvn clean install* 
+    
 3.  Third, after compiling the application successfully, you should install it as an ONOS app using the **onos-app** script as follows:
     - *onos-app localhost install target/osdf-reactive-1.0-SNAPSHOT.oar* 
 4.  Forth, after installing the *OSDF* app successfully, you should activate it using the following command from onos cli.
